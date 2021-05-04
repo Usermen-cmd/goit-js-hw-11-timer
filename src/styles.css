@@ -1,0 +1,25 @@
+.timer {
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  justify-content: center;
+}
+
+.field span {
+  display: block;
+  text-align: center;
+}
+.label {
+  color: #aaa;
+}
+.field {
+  position: relative;
+}
+.field:not(:last-child) .value::before {
+  position: absolute;
+  content: ':';
+  right: 0;
+  font-size: 30px;
+}
+.value {
+  font-size: 30px;
+}
